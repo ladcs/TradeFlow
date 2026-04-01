@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TradeFlow.Orders.models.Orders;
+using TradeFlow.Orders.Models;
 
 namespace TradeFlow.Orders.TableConfigurations;
 
