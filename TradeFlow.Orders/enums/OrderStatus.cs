@@ -2,7 +2,7 @@ namespace TradeFlow.Orders.Enums;
 
 public enum OrderStatus
 {
-    Peding,
+    Pending,
     Processed,
     Cancelled
 }
