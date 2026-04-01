@@ -1,41 +1,35 @@
-# Prerequisites
-*.d
+# Build results
+bin/
+obj/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Precompiled Headers
-*.gch
-*.pch
+# Rider
+.idea/
 
-# Linker files
-*.ilk
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
 
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# .NET
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+*.pdb
+*.cache
 
-# debug information files
-*.dwo
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+.env
