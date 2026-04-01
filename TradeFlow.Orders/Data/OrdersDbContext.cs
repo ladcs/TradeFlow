@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using TradeFlow.Orders.models.Orders;
 
-public class MyContext : DbContext
+public class OrdersDbContext : DbContext
 {
-    public MyContext(DbContextOptions<MyContext> options)
+    public OrdersDbContext(DbContextOptions<OrdersDbContext> options)
             : base(options)
     {}
 

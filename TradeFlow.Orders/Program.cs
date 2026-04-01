@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<BaseUrl>();
 
-builder.Services.AddDbContext<MyContext>(options =>
+builder.Services.AddDbContext<OrdersDbContext>(options =>
 {
     var baseUrl = new BaseUrl(builder.Configuration);
     options.UseNpgsql(baseUrl.GetConnectionString());
