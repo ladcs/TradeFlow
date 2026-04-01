@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using TradeFlow.Orders.models.Orders;
+using TradeFlow.Orders.Models;
 
 public class OrdersDbContext : DbContext
 {
@@ -8,4 +8,9 @@ public class OrdersDbContext : DbContext
     {}
 
     public DbSet<Order> Orders { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(OrdersDbContext).Assembly);
+    }
 }

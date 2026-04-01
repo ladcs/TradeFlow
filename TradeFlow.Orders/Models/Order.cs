@@ -1,6 +1,6 @@
 using TradeFlow.Orders.Enums;
 
-namespace TradeFlow.Orders.models.Orders;
+namespace TradeFlow.Orders.Models;
 
 public class Order
 {
